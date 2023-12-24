@@ -45,7 +45,7 @@ const GroupChatModal = ({ children }) => {
         },
       };
       const { data } = await axios.get(`/api/user?search=${search}`, config);
-      console.log(data);
+      // console.log(data);
       setLoading(false);
       setSearchResult(data);
     } catch (error) {
@@ -106,7 +106,7 @@ const GroupChatModal = ({ children }) => {
         config
       );
       setChats([data, ...chats]);
-      console.log(chats);
+      // console.log(chats);
       onClose();
       toast({
         title: "New Group Chat Created!",
